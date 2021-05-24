@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" type="text/css">
+    <!-- <link rel="icon" href="media/icon/icon.png"> -->
+</head>
+
+<body>
+    <header class="">
+        <div id="top-nav" class="top-nav">
+            <div class="container">
+                <div class="top-nav__body">
+
+                    <div class="icon-text  icon-text_city">
+                        <svg width="19" height="18" ><use  xlink:href="sprite.svg#location"></use></svg>
+                        <p class="icon-text__text">г. Ставрополь</p>
+                    </div>
+            
+                    <div class="icon-text  icon-text_tel">
+                        <svg width="19" height="18" ><use  xlink:href="sprite.svg#tel"></use></svg>
+                        <a class="icon-text__text" href="tel:914508">91-45-08</a>
+                    
+                    </div>
+                
+                    <div class="icon-text  icon-text_mail">
+                        <svg width="23" height="18" ><use  xlink:href="sprite.svg#mail"></use></svg>
+                        <p class="icon-text__text">Напишите нам</p>
+                    </div>
+                </div>
+            </div> 
+        </div>  
+        <div id="header" class="header ">
+            <div class="container">
+                <div class="header__top">
+                    <div id="burger" class="burger">
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html"><img src="../icon/header-footer/logo.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <form class="search__body" action="#">
+                            <label class="search__label" for="search__input">Поиск товара</label>
+                            <div class="search__border">
+                                <input id="search__input" type="text" name="search" placeholder="Введите название товара" class="search__input">
+                                <button name="search" type="submit" value="" class="search__btn">
+                                    <svg width="16" height="16" ><use  xlink:href="sprite.svg#search"></use></svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <a class="tel-header" href="tel:914508">
+                        <svg width="20" height="20" fill="#000" ><use  xlink:href="sprite.svg#tel"></use></svg>
+                    </a>
+                    <a href="basket.html">
+                        <div class="basket">
+                            <div class="basket__svg">
+                                <svg ><use  xlink:href="sprite.svg#basket"></use></svg>
+                                <span class="basket__quantity">2</span>
+                            </div> 
+                            <div class="basket__sum">
+                                <span class="basket__value" >4 999</span>
+                                <span class="basket__currency" >Руб</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="burger__body" class="burger__body">
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="index.html" class="current">Каталог товаров</a></li>
+                            <li><a href="sale.html" class="">Акции</a></li>
+                            <li><a href="new.html" class="">Новинки</a></li>
+                            <li><a href="about.html" class="">О нас</a></li>
+                            <li><a href="servis.html" class="">Сервис</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<main>
+    <div class="container">
+
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="index.html"><span>Гланвая </span></a></li>
+                <li><a href="stroitelnyye-smesi.html"><span>Строительные смеси</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="list-page__body">
+            <aside class="list-page__bar">
+                <div class="filter">
+                    <div class="filter__heading unfolding">
+                        <p class="filter__title">Подбор по параметрам</p>
+                    </div>
+                    <form action="#" class="filter__wraper">
+                        <div class="filter__body">
+                            <div class="filter__item filter-item">
+                                <div class="filter-item__title unfolding">
+                                    <span>Тип</span>
+                                </div>
+                                <div class="filter-item__content">
+                                    <div class="filter-item__body">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="plaster" name="plaster">
+                                        <label for="plaster">Гипсовая штукатурка</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="plaster2" name="plaster">
+                                        <label for="plaster2">Декоративная штукатурка</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="plaster3" name="plaster">
+                                        <label for="plaster3">Цементная штукатурка</label>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item filter-item">
+                                <div class="filter-item__title unfolding">
+                                    <span>Цена</span>
+                                </div>
+                                <div class="filter-item__content">
+                                   <div class="filter-item__body">
+                                       <div class="value-inputs">
+                                           <input type="number" placeholder="от 100" name="price-start">
+                                           <hr>  
+                                           <input type="number" placeholder="до 1200 " name="price-end">
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="filter__item filter-item">
+                                <div class="filter-item__title unfolding">
+                                    <span>Марка</span>
+                                </div>
+                                <div class="filter-item__content">
+                                    <div class="filter-item__body">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand" name="brand">
+                                            <label for="brand">Ceresit</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand2" name="brand2">
+                                            <label for="brand2">GRANIT</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand3" name="brand3">
+                                            <label for="brand3">KNAUF</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand4" name="brand4">
+                                            <label for="brand4">MAGNET</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand5" name="brand5">
+                                            <label for="brand5">SAMIX</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand6" name="brand6">
+                                            <label for="brand6">SUHO</label>
+                                        </div>
+                                
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="filter__item filter-item">
+                                <div class="filter-item__title unfolding">
+                                    <span>Область применения</span>
+                                </div>
+                                <div class="filter-item__content">
+                                    <div class="filter-item__body">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="application" name="application">
+                                            <label for="application">Для внутренних и наружных работ</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="application2" name="application2">
+                                            <label for="application2">Для внутренних работ</label>
+                                        </div>
+                                       
+
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="filter__item filter-item">
+                                <div class="filter-item__title unfolding">
+                                    <span>Вес(кг)</span>
+                                </div>
+                                <div class="filter-item__content">
+                                    <div class="filter-item__body">
+                                       <div class="value-inputs">
+                                           <input type="number" placeholder="от 5" name="weight-start">
+                                           <hr>  
+                                           <input type="number" placeholder="до 30" name="weight-end">
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+
+
+                            <div class="filter__item filter-item">
+                                
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </aside>
+            <div class="list-page__content">
+                <div class="list-page_heading">
+                    <h3 class="block-title">Штукатурка</h3>
+
+                    <div class="select__wraper">
+                    <label for="sorting">Сортировка:</label>
+                    <div class="select">
+                        <select  name="sorting" id="sorting">
+                            <option value="">По названию (А-Я)</option>
+                            <option value="">По названию (Я-А)</option>
+                            <option value="">По цене(сначала дешевые)</option>
+                            <option value="">По цене(сначала дорогие)</option>
+                        </select>
+                    </div>
+                    </div>
+                </div>
+                <div class="list-page_cards">
+                    <div class="big-card">
+                        <a href="product.html" class="big-card__img">
+                            <img src="../img/list-page/list-page-1.png" alt="">
+                        </a>
+                        <div class="big-card__description">
+                            <a href="product.html" class="big-card__title">Штукатурка Волма-Пласт гипсовая 30 кг</a>
+                            <p class="big-card__text">ВОЛМА-ПЛАСТ - сухая штукатурная смесь на основе гипсового вяжущего и заполнителя с применением минеральных и химических добавок, обеспечивающих высокую адгезию, водоудерживающую способность и оптимальное время работы.</p>
+                        </div>
+                        <div class="big-card__parametrs">
+                            <a href="product.html" class="big-card__title big-card__title_mobail">Штукатурка Волма-Пласт гипсовая 30 кг</a>
+                            <div class="big-card__parametr">
+                                <div class="big-card__parametr-item"><span>Тип:</span>Цементная штукатурка</div>
+                                <div class="big-card__parametr-item"><span>Марка:</span>SUHO</div>
+                                <div class="big-card__parametr-item"><span>Страна производства:</span>Россия</div>
+                            </div>
+                            <div class="big-card__add">
+                                <div class="card__new-price"><span>440</span>₽</div>
+                                <button type="button" class="card__abb card__abb_basket"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="big-card">
+                        <a href="product.html" class="big-card__img">
+                            <img src="../img/list-page/list-page-2.png" alt="">
+                        </a>
+                        <div class="big-card__description">
+                            <a href="product.html" class="big-card__title">Штукатурка Волма-Пласт гипсовая 30 кг</a>
+                            <p class="big-card__text">ВОЛМА-ПЛАСТ - сухая штукатурная смесь на основе гипсового вяжущего и заполнителя с применением минеральных и химических добавок, обеспечивающих высокую адгезию, водоудерживающую способность и оптимальное время работы.</p>
+                        </div>
+                        <div class="big-card__parametrs">
+                            <a href="product.html" class="big-card__title big-card__title_mobail">Штукатурка Волма-Пласт гипсовая 30 кг</a>
+                            <div class="big-card__parametr">
+                                <div class="big-card__parametr-item"><span>Тип:</span>Цементная штукатурка</div>
+                                <div class="big-card__parametr-item"><span>Марка:</span>SUHO</div>
+                                <div class="big-card__parametr-item"><span>Страна производства:</span>Россия</div>
+                            </div>
+                            <div class="big-card__add">
+                                <div class="card__new-price"><span>440</span>₽</div>
+                                <button type="button" class="card__abb card__abb_basket"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+
+        </div>
+</main>
+
+<footer class="">
+    
+       
+        <div class="footer">
+            <div class="container">
+                <div class="header__top">
+          
+                    <div class="logo">
+                        <a href="index.html"><img src="../icon/header-footer/logo.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <form class="search__body" action="#">
+                            <label class="search__label" for="search__input">Поиск товара</label>
+                            <div class="search__border">
+                                <input id="search__input" type="text" name="search" placeholder="Введите название товара" class="search__input">
+                                <button name="search" type="submit" value="" class="search__btn">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="networks">
+                    	<a href="#" class="networks__item networks__item_facebook"></a>
+                    	<a href="#" class="networks__item networks__item_vk"></a>
+                    	<a href="#" class="networks__item networks__item_insta"></a>
+                    </div>
+                 
+                </div>
+                <div class="footer__button">
+                	<div class="icon-text  icon-text_city">
+                        <svg width="19" height="18" ><use  xlink:href="sprite.svg#location"></use></svg>
+                        <p class="icon-text__text">г. Ставрополь</p>
+                    </div>
+            
+                    <div class="icon-text  icon-text_tel">
+                        <svg width="19" height="18" ><use  xlink:href="sprite.svg#tel"></use></svg>
+                        <a class="icon-text__text" href="tel:914508">91-45-08</a>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+   
+</footer>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+</body>
+
+</html>
